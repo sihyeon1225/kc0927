@@ -27,6 +27,17 @@ acc[scoop] = 0;
 acc[scoop]++;
 })
 return acc;
-}, {}) // { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, StrawBerry: 1 }
-console.log(flavorDistribution);
+}, {})
+
+let maxFlaver = "";
+let maxCount = 0;
+
+Object.keys(flavorDistribution).forEach(flavor => {
+    if(flavorDistribution[flavor] > maxCount){
+        maxCount = flavorDistribution[flavor];
+        maxFlaver = flavor;
+    }
+});
+
+console.log(`가장 많이 팔린 아이스크림은 ${maxFlavor}로, ${maxCount}개 팔렸습니다 >.< `);
 user$
