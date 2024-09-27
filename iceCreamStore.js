@@ -29,13 +29,13 @@ acc[scoop]++;
 return acc;
 }, {})
 
-let maxFlaver = "";
+let maxFlavor = "";
 let maxCount = 0;
 
 Object.keys(flavorDistribution).forEach(flavor => {
     if(flavorDistribution[flavor] > maxCount){
         maxCount = flavorDistribution[flavor];
-        maxFlaver = flavor;
+        maxFlavor = flavor;
     }
 });
 
