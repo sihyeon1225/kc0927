@@ -1,5 +1,5 @@
 // blackjack.js
-let cardOne = 7;
+let cardOne = 9;
 let cardTwo = 5;
 let Psum = cardOne + cardTwo;
 let cardOnedeler = 7;
